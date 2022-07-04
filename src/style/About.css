@@ -1,0 +1,18 @@
+.about {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--clickable-elmt-color);
+    border-radius: var(--border-radius);
+    height: 90%;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.about__image {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.about__title {
+    font-size: 1rem;
+}

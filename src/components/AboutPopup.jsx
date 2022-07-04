@@ -1,3 +1,8 @@
 export default function AboutPopup() {
-    return <div>About Popup</div>
+    const style = {
+        aboutPopup: {
+            display: 'none'
+        }
+    }
+    return <div style={style.aboutPopup}>About Popup</div>
 }

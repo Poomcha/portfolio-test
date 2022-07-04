@@ -8,6 +8,8 @@ const projects = [
     shortName: 'groupomania',
     ghPagesUrl: 'https://poomcha.github.io/groupomania-front/#/home',
     repoUrl: 'https://github.com/Poomcha/groupomania',
+    imgMinSrc: '/images/projects_logo/groupomania_min.png',
+    imgMinAlt: 'Groupomania Logo',
     imgSrc: '/images/projects/groupomania.webp',
     imgAlt: {
       fr: {
@@ -64,6 +66,8 @@ const projects = [
     shortName: 'frontendmentor-calculatorapp',
     ghPagesUrl: 'https://poomcha.github.io/frontendmentor-calculatorapp/',
     repoUrl: 'https://github.com/Poomcha/frontendmentor-calculatorapp',
+    imgMinSrc: '/images/projects_logo/calculator_app_min.png',
+    imgMinAlt: 'Calculator App Logo',
     imgSrc: '/images/projects/calculatorapp.webp',
     imgAlt: {
       fr: {
@@ -108,6 +112,8 @@ const projects = [
     shortName: 'piiquante',
     ghPagesUrl: '',
     repoUrl: 'https://github.com/Poomcha/piiquante',
+    imgMinSrc: '/images/projects_logo/piiquante_min.png',
+    imgMinAlt: 'Piiquante Logo',
     imgSrc: '/images/projects/piiquante.webp',
     imgAlt: {
       fr: {
@@ -158,6 +164,8 @@ const projects = [
     shortName: 'kanap',
     ghPagesUrl: 'https://poomcha.github.io/kanap/index.html',
     repoUrl: 'https://github.com/Poomcha/kanap',
+    imgMinSrc: '/images/projects_logo/kanap_min.png',
+    imgMinAlt: 'Kanap Logo',
     imgSrc: '/images/projects/kanap.webp',
     imgAlt: {
       fr: {
@@ -203,6 +211,8 @@ const projects = [
     shortName: 'la-chouette-agence',
     ghPagesUrl: 'https://poomcha.github.io/la-chouette-agence/',
     repoUrl: 'https://github.com/Poomcha/la-chouette-agence',
+    imgMinSrc: '/images/projects_logo/la_chouette_agence_min.png',
+    imgMinAlt: 'La Chouette Agence Logo',
     imgSrc: '/images/projects/la-chouette-agence.webp',
     imgAlt: {
       fr: {
@@ -246,6 +256,8 @@ const projects = [
     shortName: 'ohmyfood',
     ghPagesUrl: 'https://poomcha.github.io/ohmyfood/',
     repoUrl: 'https://github.com/Poomcha/ohmyfood',
+    imgMinSrc: '/images/projects_logo/ohmyfood_min.png',
+    imgMinAlt: 'Ohmyfood Logo',
     imgSrc: '/images/projects/ohmyfood.webp',
     imgAlt: {
       fr: {
@@ -293,6 +305,8 @@ const projects = [
       'https://poomcha.github.io/frontendmentor-interactiveratingcomponent/',
     repoUrl:
       'https://github.com/Poomcha/frontendmentor-interactiveratingcomponent',
+    imgMinSrc: '/images/projects_logo/interactive_rating_component_min.png',
+    imgMinAlt: 'Interactive Rating Component Logo',
     imgSrc: '/images/projects/interactive_rating_component.webp',
     imgAlt: {
       fr: {
@@ -344,6 +358,8 @@ const projects = [
     shortName: 'reservia',
     ghPagesUrl: 'https://poomcha.github.io/reservia/',
     repoUrl: 'https://github.com/Poomcha/reservia',
+    imgMinSrc: '/images/projects_logo/reservia_min.png',
+    imgMinAlt: 'Reservia Logo',
     imgSrc: '/images/projects/reservia.webp',
     imgAlt: {
       fr: {

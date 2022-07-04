@@ -1,0 +1,6 @@
+.projectGrid {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}

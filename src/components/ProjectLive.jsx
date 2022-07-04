@@ -1,3 +1,8 @@
 export default function ProjectLive() {
-    return <div>Project Live</div>
+    const style = {
+        projectLive: {
+            display: 'none'
+        }
+    }
+    return <div style={style.projectLive}>Project Live</div>
 }

@@ -1,0 +1,28 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif, monospace;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --font-color: #CDCDCC;
+    --primary-bg-color: #03035c;
+    --secondary-bg-color: #034C8C;
+    --clickable-elmt-color: #db6226;
+    --font-ponctuation-shadow: #8c7611;
+    --hlight-elmt-color: #0a8c84;
+    --border-radius: 0.5rem;
+  } 
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-bg-color);
+    color: var(--font-color);
+}
+
