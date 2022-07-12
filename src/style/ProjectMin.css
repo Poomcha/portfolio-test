@@ -37,7 +37,7 @@
 }
 
 .projectMin__caption__arrow {
-    margin: 0.1rem 0 3vw 0;
+    margin: 0.1rem 0 1.5vw 0;
     transition: transform 350ms ease-out;
 }
 
@@ -48,7 +48,7 @@
 .projectMin__link {
     color: var(--white);
     text-decoration: none;
-    margin-top: 0.25rem;
+    margin-top: 1.5vw;
 }
 
 .projectMin__link__underline--code, .projectMin__link__underline--live  {
@@ -73,12 +73,12 @@
 
 @keyframes scaleX--code {
     to {
-        width: 1.5rem;
+        width: 6vw;
     }
 }
 
 @keyframes scaleX--live {
     to {
-        width: 3rem;
+        width: 12vw;
     }
 }

@@ -25,7 +25,7 @@ const projects = [
             <p
               className="projectMin__caption__text"
             >
-              Réseau social d'entreprise, principalement développé avec Vue.js et Node.js.
+              Réseau social d'entreprise, développé avec Vue.js et Node.js.
             </p>
         ),
       },
@@ -34,7 +34,7 @@ const projects = [
             <p
               className="projectMin__caption__text"  
             >
-              Company social network, mainly developed with Vue.js and Node.js.
+              Company social network, developed with Vue.js and Node.js.
             </p>
         ),
       },
