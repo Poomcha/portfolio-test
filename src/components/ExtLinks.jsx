@@ -41,7 +41,7 @@ export default function ExternalLinks() {
 
     return (
         // Random key here make the whole component re render on each new state
-        <aside className="externalLinks" key={Math.random()}>
+        <section className="externalLinks" key={Math.random()}>
             <div className="externalLinks__cat-ctn">
                 <i className="fa-solid fa-at externalLinks__cat"></i>
             </div>
@@ -57,6 +57,6 @@ export default function ExternalLinks() {
             <LinkImg 
                 link={about.externalLinks.github} 
                 classes={`fa-brands fa-github externalLinks__img ${animObject.element === "github" ? animObject.animation : ''}`} />
-        </aside>
+        </section>
     )
 }

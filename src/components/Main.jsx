@@ -6,7 +6,9 @@ import ProjectGrid from "./ProjectsGrid"
 export default function Main(props) {
     return (
         <main className="main">
-            <ExtLinks />
+            <aside>
+                <ExtLinks />
+            </aside>
             <ProjectGrid 
                 lang={props.lang}
                 displayText={props.displayText}

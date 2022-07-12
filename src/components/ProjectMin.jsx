@@ -11,7 +11,25 @@ export default function ProjectMin(props) {
             <figcaption 
                 className="projectMin__caption"
             >
-
+                <i className="fa-solid fa-arrow-up projectMin__caption__arrow"></i>
+                <>{props.displayText(props.lang, props.data.shortDescription, 'text')}</>
+                <a 
+                    href={props.data.repoUrl} 
+                    className="projectMin__link projectMin__link--code"
+                >
+                    Code
+                    <span className="projectMin__link__underline--code"></span>
+                </a>
+                {
+                    props.data.liveVersion && 
+                        <a 
+                            href={props.data.ghPagesUrl} 
+                            className="projectMin__link projectMin__link--live"
+                        >
+                            {props.lang === "fr" ? "Voir le site" : "Live version"}
+                            <span className="projectMin__link__underline--live"></span>
+                        </a>
+                }
             </figcaption>
         </figure>
     )

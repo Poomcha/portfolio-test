@@ -19,6 +19,26 @@ const projects = [
         text: 'Groupomania App website screenshot.',
       },
     },
+    shortDescription: {
+      fr: {
+        text: (
+            <p
+              className="projectMin__caption__text"
+            >
+              Réseau social d'entreprise, principalement développé avec Vue.js et Node.js.
+            </p>
+        ),
+      },
+      en: {
+        text: (
+            <p
+              className="projectMin__caption__text"  
+            >
+              Company social network, mainly developed with Vue.js and Node.js.
+            </p>
+        ),
+      },
+    },
     description: {
       fr: {
         text: (
@@ -77,6 +97,26 @@ const projects = [
         text: 'Calculator App website screenshot.',
       },
     },
+    shortDescription: {
+      fr: {
+        text: (
+            <p
+              className="projectMin__caption__text"
+            >
+              Une calculatrice développé avec Vue.js.
+            </p>
+        ),
+      },
+      en: {
+        text: (
+            <p
+              className="projectMin__caption__text"  
+            >
+              A calculator developed with Vue.js.
+            </p>
+        ),
+      },
+    },
     description: {
       fr: {
         text: (
@@ -121,6 +161,26 @@ const projects = [
       },
       en: {
         text: 'Piiquante website screenshot.',
+      },
+    },
+    shortDescription: {
+      fr: {
+        text: (
+            <p
+              className="projectMin__caption__text"
+            >
+              Backend d'une application de notation de sauce épicé.
+            </p>
+        ),
+      },
+      en: {
+        text: (
+            <p
+              className="projectMin__caption__text"  
+            >
+              Backend of a spicy sauce notation application.
+            </p>
+        ),
       },
     },
     description: {
@@ -175,6 +235,26 @@ const projects = [
         text: 'Kanap website screenshot.',
       },
     },
+    shortDescription: {
+      fr: {
+        text: (
+            <p
+              className="projectMin__caption__text"
+            >
+              Application e-commerce avec appels API.
+            </p>
+        ),
+      },
+      en: {
+        text: (
+            <p
+              className="projectMin__caption__text"  
+            >
+              E-shop application with API calls.
+            </p>
+        ),
+      },
+    },
     description: {
       fr: {
         text: (
@@ -222,6 +302,26 @@ const projects = [
         text: 'La Chouette Agence website screenshot.',
       },
     },
+    shortDescription: {
+      fr: {
+        text: (
+            <p
+              className="projectMin__caption__text"
+            >
+              Amélioration du SEO d'un site déjà existant.
+            </p>
+        ),
+      },
+      en: {
+        text: (
+            <p
+              className="projectMin__caption__text"  
+            >
+              SEO improvment of an existing website.
+            </p>
+        ),
+      },
+    },
     description: {
       fr: {
         text: (
@@ -265,6 +365,26 @@ const projects = [
       },
       en: {
         text: 'Ohmyfood website screenshot.',
+      },
+    },
+    shortDescription: {
+      fr: {
+        text: (
+            <p
+              className="projectMin__caption__text"
+            >
+              Application de réservation de plats, intégré en HTML et SCSS.
+            </p>
+        ),
+      },
+      en: {
+        text: (
+            <p
+              className="projectMin__caption__text"  
+            >
+              Foodtech application, implemented with HTML and SCSS. 
+            </p>
+        ),
       },
     },
     description: {
@@ -314,6 +434,26 @@ const projects = [
       },
       en: {
         text: 'Interactive rating component screenshot.',
+      },
+    },
+    shortDescription: {
+      fr: {
+        text: (
+            <p
+              className="projectMin__caption__text"
+            >
+              Un composant de notation sympa, intégré avec Vue.js.
+            </p>
+        ),
+      },
+      en: {
+        text: (
+            <p
+              className="projectMin__caption__text"  
+            >
+              A nice rating component, implemented with Vue.js.
+            </p>
+        ),
       },
     },
     description: {
@@ -367,6 +507,26 @@ const projects = [
       },
       en: {
         text: 'Reservia website screenshot.',
+      },
+    },
+    shortDescription: {
+      fr: {
+        text: (
+            <p
+              className="projectMin__caption__text"
+            >
+              Intégration d'une maquette de site de voyage en HTML and CSS.
+            </p>
+        ),
+      },
+      en: {
+        text: (
+            <p
+              className="projectMin__caption__text"  
+            >
+              Implementation of a static trip reservation website with HTML and CSS.
+            </p>
+        ),
       },
     },
     description: {

@@ -2,3 +2,9 @@
     min-height: 80vh;
     display: flex;
 }
+
+.main > aside {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
