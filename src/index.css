@@ -19,6 +19,8 @@
     --font-ponctuation-shadow: #8c7611;
     --hlight-elmt-color: #0a8c84;
     --border-radius: 0.5rem;
+    --projectMin-square-size: calc(45 * (90vw - 1.5rem) / 100);
+    --projectMin-caption-translation: calc((-45 * (90vw - 1.5rem) / 100) + 5.5vw + 0.25rem);
   } 
 
 body {
