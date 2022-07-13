@@ -16,7 +16,7 @@
     --secondary-bg-color: #034C8C;
     --secondary-bg-color-transparent: rgba(3, 76, 140, 0.95);
     --clickable-elmt-color: #db6226;
-    --font-ponctuation-shadow: #8c7611;
+    --tertiary-bg-color: #8c7611;
     --hlight-elmt-color: #0a8c84;
     --border-radius: 0.5rem;
     --projectMin-square-size: calc(45 * (90vw - 1.5rem) / 100);

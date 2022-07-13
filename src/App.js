@@ -1,7 +1,5 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
-import Footer from "./components/Footer";
-import ProjectLive from "./components/ProjectLive";
 
 import { useState } from "react";
 
@@ -29,12 +27,6 @@ function App() {
         toggleLang={toggleLang}
         displayText={displayText} 
       />
-      <Footer 
-        lang={lang}
-        toggleLang={toggleLang}
-        displayText={displayText}
-      />
-      <ProjectLive />
     </div>
   );
 }

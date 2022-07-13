@@ -1,0 +1,50 @@
+.aboutPopup {
+    position: absolute;
+    top: 4rem;
+    left: 10vw;
+    z-index: 1;
+    width: 85vw;
+    padding: 1rem;
+    border-radius: 0 var(--border-radius) var(--border-radius);
+    background-color: var(--tertiary-bg-color);
+    color: var(--black);
+    font-size: 3.5vw;
+}
+
+.aboutPopup__triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 1rem solid var(--tertiary-bg-color);
+    border-right: 1rem solid transparent;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+}
+
+.aboutPopup__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: var(--black);
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutPopup__close__x {
+    color: var(--clickable-elmt-color);
+    font-size: 1rem;
+}
+
+.aboutPopup__timeLeft {
+    position: absolute;
+    top: 0.7rem;
+    right: 2rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
