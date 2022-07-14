@@ -21,6 +21,12 @@
     --border-radius: 0.5rem;
     --projectMin-square-size: calc(45 * (90vw - 1.5rem) / 100);
     --projectMin-caption-translation: calc((-45 * (90vw - 1.5rem) / 100) + 5.5vw + 0.25rem);
+    --projectMin-square-size-tablet: calc(25 * (90vw - 1.5rem) / 100);
+    --projectMin-caption-translation-tablet: calc((-25 * (90vw - 1.5rem) / 100) + 3.25vw + 0.25rem);
+    --projectMin-square-size-laptop: calc(15 * (90vw - 1.5rem) / 100);
+    --projectMin-caption-translation-laptop: calc((-15 * (90vw - 1.5rem) / 100) + 2vw + 0.25rem);
+    --projectMin-square-size-laptop-large: calc(11 * (90vw - 1.5rem) / 100);
+    --projectMin-caption-translation-laptop-large: calc((-11 * (90vw - 1.5rem) / 100) + 1.5vw + 0.25rem);
   } 
 
 body {
@@ -29,5 +35,11 @@ body {
     background-color: var(--primary-bg-color);
     color: var(--white);
     letter-spacing: 0.075rem;
+    display: flex;
+    justify-content: center;
 }
 
+.App {
+    max-width: 1440px;
+    min-height: 100vh;
+}

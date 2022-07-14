@@ -4,6 +4,7 @@
     border: 2px solid var(--clickable-elmt-color);
     border-radius: var(--border-radius);
     height: 90%;
+    max-height: 4em;
     padding: 0.25rem;
 }
 

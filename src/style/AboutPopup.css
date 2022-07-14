@@ -4,11 +4,12 @@
     left: 10vw;
     z-index: 1;
     width: 85vw;
+    max-width: 400px;
     padding: 1rem;
     border-radius: 0 var(--border-radius) var(--border-radius);
     background-color: var(--tertiary-bg-color);
     color: var(--black);
-    font-size: 3.5vw;
+    font-size: 1rem;
 }
 
 .aboutPopup__triangle {
