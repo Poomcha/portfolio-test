@@ -1,8 +1,16 @@
 import "../style/ProjectMin.css"
 
 export default function ProjectMin(props) {
+    const style = {
+        emptyMin: {
+            opacity: props.data.name ? '1' : `${1.6 - props.index/10}`
+        }
+    }
     return (
-        <figure className={`projectMin ${(!props.data.name && "projectMin--emptyMin")}`}>
+        <figure 
+            className={`projectMin ${(!props.data.name && "projectMin--emptyMin")}`}
+            style={style.emptyMin}
+        >
             {props.data.name ? <>
                 <img 
                     src={props.data.imgMinSrc}
