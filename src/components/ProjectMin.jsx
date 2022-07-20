@@ -11,7 +11,7 @@ export default function ProjectMin(props) {
             className={`projectMin ${(!props.data.name && "projectMin--emptyMin")}`}
             style={style.emptyMin}
         >
-            {props.data.name ? <>
+            {props.data.name ? <div>
                 <img 
                     src={process.env.PUBLIC_URL + props.data.imgMinSrc}
                     alt={props.data.imgMinAlt}
@@ -21,7 +21,7 @@ export default function ProjectMin(props) {
                     className="projectMin__caption"
                 >
                     <i className="fa-solid fa-arrow-up projectMin__caption__arrow"></i>
-                    <>{props.displayText(props.lang, props.data.shortDescription, 'text')}</>
+                    <span>{props.displayText(props.lang, props.data.shortDescription, 'text')}</span>
                     <a 
                         href={props.data.repoUrl} 
                         className="projectMin__link projectMin__link--code"
@@ -40,7 +40,7 @@ export default function ProjectMin(props) {
                             </a>
                     }
                 </figcaption>
-            </> : 
+            </div> : 
             <figcaption className="projectMin__caption--emptyMin">
                 {
                     props.lang === 'fr' ? 
