@@ -13,7 +13,7 @@ export default function ProjectMin(props) {
         >
             {props.data.name ? <>
                 <img 
-                    src={props.data.imgMinSrc}
+                    src={process.env.PUBLIC_URL + props.data.imgMinSrc}
                     alt={props.data.imgMinAlt}
                     className="projectMin__image" 
                 />

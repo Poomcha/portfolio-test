@@ -10,7 +10,7 @@ export default function About(props) {
         <div className="about">
             <img 
                 className="about__image" 
-                src="/images/me/minimal-avatars.svg" 
+                src={process.env.PUBLIC_URL + "/images/me/minimal-avatars.svg"} 
                 alt="Me" 
                 onClick={() => setDisplayAbout(true)}
             />

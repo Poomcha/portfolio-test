@@ -12,11 +12,11 @@ export default function SwitchLanguage(props) {
     return (
         <fieldset className="switchLanguage" >
             <label htmlFor="fr">
-                <img src="/images/flags/fr.svg" alt="French Flag" className="switchLanguage__flagIcon"/>
+                <img src={process.env.PUBLIC_URL + "/images/flags/fr.svg"} alt="French Flag" className="switchLanguage__flagIcon"/>
             </label>
             <input type="radio" name="language" id="fr" checked={isChecked} onChange={handleCheck} />
             <label htmlFor="en">
-                <img src="/images/flags/gb.svg" alt="UK Flag" className="switchLanguage__flagIcon"/>
+                <img src={process.env.PUBLIC_URL + "/images/flags/gb.svg"} alt="UK Flag" className="switchLanguage__flagIcon"/>
             </label>
             <input type="radio" name="language" id="en" checked={!isChecked} onChange={handleCheck} />
             <div className="switchLanguage__toggleCtn">
