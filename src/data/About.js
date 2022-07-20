@@ -18,6 +18,7 @@ const about = {
               rel="noreferrer"
               href="https://www.linkedin.com/in/benjamin-degen%C3%A8ve-93b991186/"
             >
+              LinkedIn&nbsp;
               <i
                 className="fa-brands fa-linkedin-in"
                 style={{ color: 'black' }}
@@ -25,6 +26,7 @@ const about = {
             </a>
             &nbsp;
             <a href="mailto:ben.degeneve@gmail.com">
+              Mail&nbsp;
               <i
                 className="fa-solid fa-envelope"
                 style={{ color: 'black' }}

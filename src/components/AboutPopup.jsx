@@ -36,16 +36,17 @@ export default function AboutPopup(props) {
             className="aboutPopup"
         >
             <span className="aboutPopup__triangle"></span>
-            {
-                timeLeft > 0 && 
-                    <span className="aboutPopup__timeLeft">
-                        {timeLeft}
-                    </span>
-            }
             <button 
                 className="aboutPopup__close"
                 onClick={() => props.setDisplayAbout(false)}
             >
+                {
+                timeLeft > 0 && 
+                    <span className="aboutPopup__timeLeft">
+                        {timeLeft}
+                    </span>
+                }
+                <span>{props.lang === 'fr' ? 'Fermer' : 'Close'}</span>
                 <i className="fa-solid fa-xmark aboutPopup__close__x"></i>
             </button>
             {props.displayText(props.lang, data.aboutMe, 'title')}

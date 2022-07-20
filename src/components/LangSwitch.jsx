@@ -10,7 +10,7 @@ export default function SwitchLanguage(props) {
     }
 
     return (
-        <div className="switchLanguage" >
+        <fieldset className="switchLanguage" >
             <label htmlFor="fr">
                 <img src="/images/flags/fr.svg" alt="French Flag" className="switchLanguage__flagIcon"/>
             </label>
@@ -22,6 +22,6 @@ export default function SwitchLanguage(props) {
             <div className="switchLanguage__toggleCtn">
                 <div className="switchLanguage__slider"></div>
             </div>
-        </div>
+        </fieldset>
     )
 }

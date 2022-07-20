@@ -45,16 +45,19 @@ export default function ExternalLinks() {
             <div className="externalLinks__cat-ctn">
                 <i className="fa-solid fa-at externalLinks__cat"></i>
             </div>
-            <LinkImg 
+            <LinkImg
+                name="linkedIn" 
                 link={about.externalLinks.linkedIn} 
                 classes={`fa-brands fa-linkedin-in externalLinks__img ${animObject.element === "linkedIn" ? animObject.animation : ''}`} />
             <LinkImg
+                name="email"
                 link={`mailto:${about.externalLinks.gmail}`} 
                 classes={`fa-solid fa-envelope externalLinks__img ${animObject.element === "email" ? animObject.animation : ''}`} />
             <div className="externalLinks__cat-ctn">
                 <i className="fa-solid fa-code externalLinks__cat"></i> 
             </div>
             <LinkImg 
+                name="github"
                 link={about.externalLinks.github} 
                 classes={`fa-brands fa-github externalLinks__img ${animObject.element === "github" ? animObject.animation : ''}`} />
         </section>

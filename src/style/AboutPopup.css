@@ -29,26 +29,27 @@
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    width: 1.25rem;
+    width: fit-content;
     height: 1.25rem;
     background-color: var(--black);
     border: none;
-    border-radius: 100%;
+    border-radius: var(--border-radius);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: var(--clickable-elmt-color);
+    padding: 0.5rem;
 }
 
 .aboutPopup__close__x {
     color: var(--clickable-elmt-color);
     font-size: 1rem;
+    margin-left: 0.5rem;
 }
 
 .aboutPopup__timeLeft {
-    position: absolute;
-    top: 0.7rem;
-    right: 2rem;
+    margin-right: 0.5rem;
     font-size: 0.75rem;
     font-weight: 700;
 }
@@ -62,4 +63,9 @@
     display: block;
     margin: 0 0.5rem;
     font-weight: 700;
+}
+
+.aboutPopup a {
+    color: var(--black);
+    text-decoration: none;
 }
