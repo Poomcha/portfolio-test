@@ -4,12 +4,14 @@
     left: 10%;
     z-index: 1;
     width: 85%;
-    max-width: 400px;
+    max-width: 460px;
     padding: 1rem;
     border-radius: 0 var(--border-radius) var(--border-radius);
     background-color: var(--tertiary-bg-color);
     color: var(--black);
     font-size: 1rem;
+    opacity: 0.975;
+    backdrop-filter: blur(100px);
 }
 
 .aboutPopup__triangle {
@@ -48,5 +50,16 @@
     top: 0.7rem;
     right: 2rem;
     font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.aboutPopup__skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutPopup__skills__skill {
+    display: block;
+    margin: 0 0.5rem;
     font-weight: 700;
 }

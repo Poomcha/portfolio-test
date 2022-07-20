@@ -26,7 +26,7 @@ export default function ProjectMin(props) {
                         href={props.data.repoUrl} 
                         className="projectMin__link projectMin__link--code"
                     >
-                        Code
+                        Code <i className="fa-solid fa-arrow-up-right-from-square projectMin__link__icon"></i>
                         <span className="projectMin__link__underline--code"></span>
                     </a>
                     {
@@ -35,7 +35,7 @@ export default function ProjectMin(props) {
                                 href={props.data.ghPagesUrl} 
                                 className="projectMin__link projectMin__link--live"
                             >
-                                {props.lang === "fr" ? "Voir le site" : "Live version"}
+                                {props.lang === "fr" ? "Voir le site" : "Live version"} <i className="fa-solid fa-arrow-up-right-from-square projectMin__link__icon"></i>
                                 <span className="projectMin__link__underline--live"></span>
                             </a>
                     }

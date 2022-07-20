@@ -11,6 +11,11 @@ export default function AboutPopup(props) {
         }
     }
 
+    const skills = data.hardSkills.map(
+        (skill, index) => (
+            <span key={index} className="aboutPopup__skills__skill">{skill}</span>
+        ))
+
     const [timeLeft, setTimeLeft] = useState(15)
 
     const decrementTime = () => {
@@ -45,6 +50,10 @@ export default function AboutPopup(props) {
             </button>
             {props.displayText(props.lang, data.aboutMe, 'title')}
             {props.displayText(props.lang, data.aboutMe, 'text')}
+            {props.displayText(props.lang, data.aboutMe, 'subtitle')}
+            <p className="aboutPopup__skills">
+                {skills}
+            </p>
         </article>
     )
 }
