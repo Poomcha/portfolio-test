@@ -70,7 +70,7 @@ const projects = [
         ),
       },
     },
-    liveVersion: true,
+    liveVersion: false,
     tech: ['html', 'css', 'vue', 'sass', 'js', 'mysql', 'sequelize', 'node'],
   },
   // Calculator App
