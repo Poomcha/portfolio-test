@@ -1,6 +1,6 @@
-import "../style/ExternalLinks.css"
-
+import styles from "../styles/extlinks.module.css"
 import about from "../data/About.js"
+import cn from "classnames"
 
 import LinkImg from "./LinkImg" 
 
@@ -41,9 +41,9 @@ export default function ExternalLinks() {
 
     return (
         // Random key here make the whole component re render on each new state
-        <section className="externalLinks" key={Math.random()}>
-            <div className="externalLinks__cat-ctn">
-                <i className="fa-solid fa-at externalLinks__cat"></i>
+        <section className={styles.externalLinks} key={Math.random()}>
+            <div className={styles.externalLinks__cat_ctn}>
+                <i className={cn("fa-solid fa-at", styles.externalLinks__cat)}></i>
             </div>
             <LinkImg
                 name="linkedIn" 
@@ -53,8 +53,8 @@ export default function ExternalLinks() {
                 name="email"
                 link={`mailto:${about.externalLinks.gmail}`} 
                 classes={`fa-solid fa-envelope externalLinks__img ${animObject.element === "email" ? animObject.animation : ''}`} />
-            <div className="externalLinks__cat-ctn">
-                <i className="fa-solid fa-code externalLinks__cat"></i> 
+            <div className={styles.externalLinks__cat_ctn}>
+                <i className={cn("fa-solid fa-code", styles.externalLinks__cat)}></i> 
             </div>
             <LinkImg 
                 name="github"

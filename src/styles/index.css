@@ -1,0 +1,45 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif, monospace;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --font-color: #CDCDCC;
+    --primary-bg-color: #03035c;
+    --primary-bg-color-transparent: rgba(3, 3, 92, 0.75); 
+    --secondary-bg-color: #034C8C;
+    --secondary-bg-color-transparent: rgba(3, 76, 140, 0.95);
+    --clickable-elmt-color: #db6226;
+    --tertiary-bg-color: #8c7611;
+    --hlight-elmt-color: #0a8c84;
+    --border-radius: 0.5rem;
+    --projectMin-square-size: calc(45 * (90vw - 1.5rem) / 100);
+    --projectMin-caption-translation: calc((-45 * (90vw - 1.5rem) / 100) + 5.5vw + 0.25rem);
+    --projectMin-square-size-tablet: calc(25 * (90vw - 1.5rem) / 100);
+    --projectMin-caption-translation-tablet: calc((-25 * (90vw - 1.5rem) / 100) + 3.25vw + 0.25rem);
+    --projectMin-square-size-laptop: calc(15 * (90vw - 1.5rem) / 100);
+    --projectMin-caption-translation-laptop: calc((-15 * (90vw - 1.5rem) / 100) + 2vw + 0.25rem);
+    --projectMin-square-size-laptop-large: calc(11 * (90vw - 1.5rem) / 100);
+    --projectMin-caption-translation-laptop-large: calc((-11 * (90vw - 1.5rem) / 100) + 1.5vw + 0.25rem);
+  } 
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-bg-color);
+    color: var(--white);
+    letter-spacing: 0.075rem;
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    max-width: 1440px;
+    min-height: 100vh;
+}

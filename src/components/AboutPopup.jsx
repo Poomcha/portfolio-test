@@ -1,5 +1,5 @@
-import "../style/AboutPopup.css"
-
+import styles from "../styles/aboutpopup.module.css"
+import cn from "classnames"
 import data from "../data/About"
 import { useEffect } from "react"
 import { useState } from "react"
@@ -7,13 +7,13 @@ import { useState } from "react"
 export default function AboutPopup(props) {
     const style = {
         aboutPopup: {
-            display: props.displayAbout ? 'block' : 'none'
+            display: props.displayAbout ? 'block' : 'none',
         }
     }
 
     const skills = data.hardSkills.map(
         (skill, index) => (
-            <span key={index} className="aboutPopup__skills__skill">{skill}</span>
+            <span key={index} className={styles.aboutPopup__skills__skill}>{skill}</span>
         ))
 
     const [timeLeft, setTimeLeft] = useState(15)
@@ -33,26 +33,26 @@ export default function AboutPopup(props) {
     return (
         <article
             style={style.aboutPopup}
-            className="aboutPopup"
+            className={styles.aboutPopup}
         >
-            <span className="aboutPopup__triangle"></span>
+            <span className={styles.aboutPopup__triangle}></span>
             <button 
-                className="aboutPopup__close"
+                className={styles.aboutPopup__close}
                 onClick={() => props.setDisplayAbout(false)}
             >
                 {
                 timeLeft > 0 && 
-                    <span className="aboutPopup__timeLeft">
+                    <span className={styles.aboutPopup__timeLeft}>
                         {timeLeft}
                     </span>
                 }
                 <span>{props.lang === 'fr' ? 'Fermer' : 'Close'}</span>
-                <i className="fa-solid fa-xmark aboutPopup__close__x"></i>
+                <i className={cn("fa-solid fa-xmark", styles.aboutPopup__close__x)}></i>
             </button>
             {props.displayText(props.lang, data.aboutMe, 'title')}
             {props.displayText(props.lang, data.aboutMe, 'text')}
             {props.displayText(props.lang, data.aboutMe, 'subtitle')}
-            <p className="aboutPopup__skills">
+            <p className={styles.aboutPopup__skills}>
                 {skills}
             </p>
         </article>

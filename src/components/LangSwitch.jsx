@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../style/LangSwitch.css"
+import styles from "../styles/langswitch.module.css"
 
 export default function SwitchLanguage(props) {
     const [isChecked, setIsChecked] = useState(true)
@@ -10,17 +10,17 @@ export default function SwitchLanguage(props) {
     }
 
     return (
-        <fieldset className="switchLanguage" >
+        <fieldset className={styles.switchLanguage}>
             <label htmlFor="fr">
-                <img src={process.env.PUBLIC_URL + "/images/flags/fr.svg"} alt="French Flag" className="switchLanguage__flagIcon"/>
+                <img src="/images/flags/fr.svg" alt="French Flag" className={styles.switchLanguage__flagIcon}/>
             </label>
-            <input type="radio" name="language" id="fr" checked={isChecked} onChange={handleCheck} />
+            <input type="radio" name="language" id="fr" checked={isChecked} onChange={handleCheck} className={styles.switchLanguage__input_fr}/>
             <label htmlFor="en">
-                <img src={process.env.PUBLIC_URL + "/images/flags/gb.svg"} alt="UK Flag" className="switchLanguage__flagIcon"/>
+                <img src="/images/flags/gb.svg" alt="UK Flag" className={styles.switchLanguage__flagIcon}/>
             </label>
-            <input type="radio" name="language" id="en" checked={!isChecked} onChange={handleCheck} />
-            <div className="switchLanguage__toggleCtn">
-                <div className="switchLanguage__slider"></div>
+            <input type="radio" name="language" id="en" checked={!isChecked} onChange={handleCheck} className={styles.switchLanguage__input_en}/>
+            <div className={styles.switchLanguage__toggleCtn}>
+                <div className={styles.switchLanguage__slider}></div>
             </div>
         </fieldset>
     )

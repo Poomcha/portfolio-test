@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../style/About.css"
+import styles from "../styles/about.module.css"
 
 import AboutPopup from "./AboutPopup"
 
@@ -7,15 +7,15 @@ export default function About(props) {
     const [displayAbout, setDisplayAbout] = useState(true);
 
     return (
-        <div className="about">
+        <div className={styles.about}>
             <img 
-                className="about__image" 
-                src={process.env.PUBLIC_URL + "/images/me/minimal-avatars.svg"} 
+                className={styles.about__image}
+                src="/images/me/minimal-avatars.svg" 
                 alt="Me" 
                 onClick={() => setDisplayAbout(true)}
             />
             <h1 
-                className="about__title" 
+                className={styles.about__title}
                 onClick={() => setDisplayAbout(true)}>
                     Ben Degenève
             </h1>

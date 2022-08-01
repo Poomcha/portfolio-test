@@ -1,5 +1,5 @@
-import "../style/ProjectMin.css"
-
+import styles from "../styles/projectmin.module.css"
+import cn from "classnames"
 export default function ProjectMin(props) {
     const style = {
         emptyMin: {
@@ -8,40 +8,71 @@ export default function ProjectMin(props) {
     }
     return (
         <figure 
-            className={`projectMin ${(!props.data.name && "projectMin--emptyMin")}`}
+            // className={`projectMin ${(!props.data.name && "projectMin--emptyMin")}`}
             style={style.emptyMin}
+            className={
+                cn(
+                    styles.projectMin,
+                    {[styles.projectMin_emptyMin]: !props.data.name}
+                )}
         >
             {props.data.name ? <div>
                 <img 
-                    src={process.env.PUBLIC_URL + props.data.imgMinSrc}
+                    src={props.data.imgMinSrc}
                     alt={props.data.imgMinAlt}
-                    className="projectMin__image" 
+                    className={styles.projectMin__image}
                 />
                 <figcaption 
-                    className="projectMin__caption"
+                    className={styles.projectMin__caption}
                 >
-                    <i className="fa-solid fa-arrow-up projectMin__caption__arrow"></i>
+                    <i className={
+                        cn(
+                            "fa-solid fa-arrow-up",
+                            styles.projectMin__caption__arrow
+                        )
+                    }></i>
                     <span>{props.displayText(props.lang, props.data.shortDescription, 'text')}</span>
                     <a 
                         href={props.data.repoUrl} 
-                        className="projectMin__link projectMin__link--code"
+                        className={
+                            cn(
+                                styles.projectMin__link,
+                                styles.projectMin__link_code
+                            )
+                        }
                     >
-                        Code <i className="fa-solid fa-arrow-up-right-from-square projectMin__link__icon"></i>
-                        <span className="projectMin__link__underline--code"></span>
+                        Code <i className={
+                            cn(
+                                "fa-solid fa-arrow-up-right-from-square",
+                                styles.projectMin__link__icon
+                            )
+                        }></i>
+                        <span className={styles.projectMin__link__underline_code}></span>
                     </a>
                     {
                         props.data.liveVersion && 
                             <a 
                                 href={props.data.ghPagesUrl} 
-                                className="projectMin__link projectMin__link--live"
+                                className={
+                                    cn(
+                                        styles.projectMin__link,
+                                        styles.projectMin__link_live
+                                    )
+                                }
                             >
-                                {props.lang === "fr" ? "Voir le site" : "Live version"} <i className="fa-solid fa-arrow-up-right-from-square projectMin__link__icon"></i>
-                                <span className="projectMin__link__underline--live"></span>
+                                {props.lang === "fr" ? "Voir le site" : "Live version"} 
+                                <i className={
+                                    cn(
+                                        "fa-solid fa-arrow-up-right-from-square",
+                                        styles.projectMin__link__icon
+                                    )
+                                }></i>
+                                <span className={styles.projectMin__link__underline_live}></span>
                             </a>
                     }
                 </figcaption>
             </div> : 
-            <figcaption className="projectMin__caption--emptyMin">
+            <figcaption className={styles.projectMin__caption_emptyMin}>
                 {
                     props.lang === 'fr' ? 
                         "Projet en cours" :

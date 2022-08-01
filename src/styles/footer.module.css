@@ -1,0 +1,10 @@
+.footer {
+    width: 0;
+    height: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    border-bottom: double 85vh var(--hlight-elmt-color);
+    border-left: solid 90vw transparent;
+    margin-left: 10vw;
+}

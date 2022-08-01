@@ -1,0 +1,10 @@
+.main {
+    min-height: 90vh;
+    display: flex;
+}
+
+.main__aside {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}

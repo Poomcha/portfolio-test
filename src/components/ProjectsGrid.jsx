@@ -1,4 +1,4 @@
-import "../style/ProjectGrid.css"
+import styles from "../styles/projectgrid.module.css"
 
 import projects from "../data/Projects"
 
@@ -15,7 +15,7 @@ export default function ProjectsGrid(props) {
         />
     ))
     return (
-        <section className="projectGrid">
+        <section className={styles.projectGrid}>
             {myProjects}
         </section>
     )
