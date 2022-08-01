@@ -3,6 +3,7 @@ import styles from "../styles/projectgrid.module.css"
 import projects from "../data/Projects"
 
 import ProjectMin from "./ProjectMin"
+import ClientRendering from "./ClientRendering"
 
 export default function ProjectsGrid(props) {
     const myProjects = projects.map((project, index) => (
@@ -16,7 +17,9 @@ export default function ProjectsGrid(props) {
     ))
     return (
         <section className={styles.projectGrid}>
-            {myProjects}
+            <ClientRendering>
+                {myProjects}
+            </ClientRendering>
         </section>
     )
 }

@@ -2,6 +2,7 @@ import { useState } from "react"
 import styles from "../styles/about.module.css"
 
 import AboutPopup from "./AboutPopup"
+import ClientRendering from "./ClientRendering";
 
 export default function About(props) {
     const [displayAbout, setDisplayAbout] = useState(true);
@@ -19,12 +20,14 @@ export default function About(props) {
                 onClick={() => setDisplayAbout(true)}>
                     Ben Degenève
             </h1>
-            <AboutPopup 
-                lang={props.lang} 
-                displayText={props.displayText}
-                displayAbout={displayAbout}
-                setDisplayAbout={setDisplayAbout} 
-            />
+            <ClientRendering>
+                <AboutPopup 
+                    lang={props.lang} 
+                    displayText={props.displayText}
+                    displayAbout={displayAbout}
+                    setDisplayAbout={setDisplayAbout} 
+                />
+            </ClientRendering>
         </div>
     )
 }
